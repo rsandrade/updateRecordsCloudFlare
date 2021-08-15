@@ -3,11 +3,13 @@
 # Configuration
 _EMAIL=user@email.com
 _API_TOKEN=XXXXXXXXXXXXX
-_NEW_IP=100.100.100.100
 # Complete the array below with all domain|subdomain entries you want to update at Cloudflare
 _DOMAIN_SUBDOMAIN=(
     'domain.tld|subdomain.domain.tld'
 )
+
+# Auto detect wan address
+_NEW_IP=$(curl api.ipify.org)
 
 for _domsub in ${_DOMAIN_SUBDOMAIN[*]};
     do
