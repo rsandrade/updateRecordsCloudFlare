@@ -6,6 +6,7 @@ _API_TOKEN=XXXXXXXXXXXXX
 # Complete the array below with all domain|subdomain entries you want to update at Cloudflare
 _DOMAIN_SUBDOMAIN=(
     'domain.tld|subdomain.domain.tld'
+    'domain2.tld|subdomai2n.domain2.tld'
 )
 
 # Auto detect wan address
